@@ -36,7 +36,7 @@ function increase_score(id){
       data.sort(function(a, b) {
         return b.score - a.score || a.name - b.name
       })
-      display_scoreboard(result.scoreboard)
+      display_scoreboard(data)
     },
     error: function(request, status, error){
         console.log("Error");
